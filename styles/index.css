@@ -208,7 +208,7 @@
 .org-wrap {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0;
   flex: 1;
 }
 
@@ -217,6 +217,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  margin-bottom: 28px;
 }
 .org-node {
   display: flex;
@@ -273,8 +274,9 @@
   align-items: center;
   gap: 0;
   position: relative;
-  height: 26px;
+  height: 32px;
   flex-shrink: 0;
+  margin-bottom: 10px;
 }
 .org-bracket {
   width: 68%;
