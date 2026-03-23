@@ -121,8 +121,8 @@ layout: default
   <!-- Bracket connector -->
   <div class="org-bracket-wrap">
     <div class="org-bracket"></div>
-    <div class="org-bracket-label">Responsabilidad compartida entre los tres</div>
   </div>
+  <div class="org-bracket-label">Responsabilidad compartida entre los tres</div>
 
   <!-- Shared areas -->
   <div class="shared-row">
