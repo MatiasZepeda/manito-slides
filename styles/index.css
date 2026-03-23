@@ -205,58 +205,110 @@
 }
 
 /* ════════════════════════ SLIDE 3 — EQUIPO ════════════════════════ */
-.team-wrap {
+.org-wrap {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   flex: 1;
 }
-.roles-row {
+
+/* Three person nodes */
+.org-nodes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
-.role-card {
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1.5px solid var(--c, #ccc);
-  background: var(--white);
-}
-.role-bar {
-  height: 6px;
-  background: var(--c);
-}
-.role-inner {
-  padding: 14px 18px 16px;
-  text-align: center;
-}
-.role-name {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--c);
-  margin-bottom: 3px;
-}
-.role-title {
-  font-size: 13px;
-  color: var(--muted);
-}
-
-.shared-section {
+.org-node {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 12px 20px;
+  border-radius: 12px;
+  background: var(--white);
+  border: 2px solid var(--c);
+  position: relative;
 }
-.shared-label {
-  font-size: 10.5px;
+/* Bottom connector dot */
+.org-node::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--c);
+  z-index: 2;
+}
+.org-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--white);
+  flex-shrink: 0;
+}
+.org-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--c);
+}
+.org-role {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Bracket connector */
+.org-bracket-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  height: 26px;
+  flex-shrink: 0;
+}
+.org-bracket {
+  width: 68%;
+  height: 14px;
+  border-left: 2px solid var(--border);
+  border-right: 2px solid var(--border);
+  border-bottom: 2px solid var(--border);
+  border-radius: 0 0 6px 6px;
+  position: relative;
+}
+.org-bracket::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 10px;
+  background: var(--border);
+}
+.org-bracket-label {
+  font-size: 10px;
   color: var(--muted);
   font-style: italic;
-  font-weight: 500;
+  margin-top: 2px;
 }
+
+/* Shared areas */
 .shared-row {
   display: flex;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  height: 62px;
+  height: 64px;
+  flex-shrink: 0;
 }
 .shared-block {
   flex: 1;
@@ -269,17 +321,19 @@
   text-align: center;
   line-height: 1.25;
 }
-.shared-divider {
-  width: 28px;
-  background: rgba(255,255,255,0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: rgba(255,255,255,0.9);
+.shared-sep {
+  width: 3px;
+  background: rgba(255,255,255,0.25);
   flex-shrink: 0;
 }
 
+/* Collaborators */
+.shared-label {
+  font-size: 10.5px;
+  color: var(--muted);
+  font-style: italic;
+  font-weight: 500;
+}
 .collab-section {
   display: flex;
   flex-direction: column;
@@ -349,27 +403,24 @@
 }
 .pillar-list {
   flex: 1;
-  padding: 10px 14px 10px 14px;
+  padding: 10px 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 0;
-  list-style: none;
-  margin: 0;
 }
-.pillar-list li {
+.pi {
   font-size: 11.5px;
   line-height: 1.45;
   color: var(--dark);
   padding-left: 14px;
   position: relative;
 }
-.pillar-list li::before {
+.pi::before {
   content: '—';
   position: absolute;
   left: 0;
   color: var(--c);
-  opacity: 0.5;
+  opacity: 0.6;
   font-size: 10px;
 }
 

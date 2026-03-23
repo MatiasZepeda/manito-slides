@@ -14,7 +14,7 @@ fonts:
 <div class="cover">
   <div class="cover-left">
     <div class="cover-tag">Manito · Reunión interna</div>
-    <h1 class="cover-h1">Pre-<br>lanza<br>miento</h1>
+    <h1 class="cover-h1">Lo que<br>viene</h1>
     <p class="cover-sub">Roles, responsabilidades<br>y plan de trabajo</p>
     <div class="cover-pill">23 · 03 · 2026</div>
   </div>
@@ -97,43 +97,43 @@ layout: default
   <span class="s-bar-counter">2 / 3</span>
 </div>
 <div class="s-body">
-<div class="team-wrap">
+<div class="org-wrap">
 
-  <div class="roles-row">
-    <div class="role-card" style="--c:#1B5F6F">
-      <div class="role-bar"></div>
-      <div class="role-inner">
-        <div class="role-name">Martín</div>
-        <div class="role-title">Producto &amp; Tech</div>
-      </div>
+  <!-- Core team nodes -->
+  <div class="org-nodes">
+    <div class="org-node" style="--c:#1B5F6F">
+      <div class="org-avatar">M</div>
+      <div class="org-name">Martín</div>
+      <div class="org-role">Producto &amp; Tech</div>
     </div>
-    <div class="role-card" style="--c:#F19A6D">
-      <div class="role-bar"></div>
-      <div class="role-inner">
-        <div class="role-name">Matías</div>
-        <div class="role-title">Marketing</div>
-      </div>
+    <div class="org-node" style="--c:#F19A6D">
+      <div class="org-avatar">M</div>
+      <div class="org-name">Matías</div>
+      <div class="org-role">Marketing</div>
     </div>
-    <div class="role-card" style="--c:#4A8F9E">
-      <div class="role-bar"></div>
-      <div class="role-inner">
-        <div class="role-name">Nacho</div>
-        <div class="role-title">Legal</div>
-      </div>
+    <div class="org-node" style="--c:#4A8F9E">
+      <div class="org-avatar">N</div>
+      <div class="org-name">Nacho</div>
+      <div class="org-role">Legal</div>
     </div>
   </div>
 
-  <div class="shared-section">
-    <div class="shared-label">Responsabilidad compartida entre los tres</div>
-    <div class="shared-row">
-      <div class="shared-block" style="background:#1B5F6F">Finanzas &amp;<br>Contabilidad</div>
-      <div class="shared-divider">↔</div>
-      <div class="shared-block" style="background:#4A8F9E">Operaciones</div>
-      <div class="shared-divider">↔</div>
-      <div class="shared-block" style="background:#F19A6D">Ventas</div>
-    </div>
+  <!-- Bracket connector -->
+  <div class="org-bracket-wrap">
+    <div class="org-bracket"></div>
+    <div class="org-bracket-label">Responsabilidad compartida entre los tres</div>
   </div>
 
+  <!-- Shared areas -->
+  <div class="shared-row">
+    <div class="shared-block" style="background:#1B5F6F">Finanzas &amp;<br>Contabilidad</div>
+    <div class="shared-sep"></div>
+    <div class="shared-block" style="background:#4A8F9E">Operaciones</div>
+    <div class="shared-sep"></div>
+    <div class="shared-block" style="background:#F19A6D">Ventas</div>
+  </div>
+
+  <!-- Collaborators -->
   <div class="collab-section">
     <div class="shared-label">Colaboradores</div>
     <div class="collab-row">
@@ -169,87 +169,69 @@ layout: default
 <div class="pillars">
 
   <div class="pillar" style="--c:#1B5F6F">
-    <div class="pillar-head">
-      <span class="pillar-title">Producto</span>
-      <span class="pillar-owner">Martín</span>
+    <div class="pillar-head"><span class="pillar-title">Producto</span><span class="pillar-owner">Martín</span></div>
+    <div class="pillar-list">
+      <div class="pi">Desarrollo y mantenimiento de la app (iOS y Android)</div>
+      <div class="pi">QA, testeo y corrección de bugs</div>
+      <div class="pi">Onboarding de clientes y profesionales</div>
+      <div class="pi">Portal Controller: dashboard interno del equipo</div>
+      <div class="pi">Roadmap y priorización de nuevas funcionalidades</div>
     </div>
-    <ul class="pillar-list">
-      <li>Desarrollo y mantenimiento de la app (iOS y Android)</li>
-      <li>QA, testeo y corrección de bugs</li>
-      <li>Onboarding de clientes y profesionales</li>
-      <li>Portal Controller: dashboard interno del equipo</li>
-      <li>Roadmap y priorización de nuevas funcionalidades</li>
-    </ul>
   </div>
 
   <div class="pillar" style="--c:#F19A6D">
-    <div class="pillar-head">
-      <span class="pillar-title">Marketing</span>
-      <span class="pillar-owner">Matías</span>
+    <div class="pillar-head"><span class="pillar-title">Marketing</span><span class="pillar-owner">Matías</span></div>
+    <div class="pillar-list">
+      <div class="pi">Campañas en Meta Ads para adquirir nuevos clientes</div>
+      <div class="pi">Contenido orgánico y gestión de redes sociales</div>
+      <div class="pi">Diseño de piezas y posts para Instagram y Facebook</div>
+      <div class="pi">Edición de reels y contenido audiovisual</div>
+      <div class="pi">Otros canales: WhatsApp y comunidades cercanas</div>
     </div>
-    <ul class="pillar-list">
-      <li>Campañas en Meta Ads para adquirir nuevos clientes</li>
-      <li>Contenido orgánico y gestión de redes sociales</li>
-      <li>Diseño de piezas y posts para Instagram y Facebook</li>
-      <li>Edición de reels y contenido audiovisual</li>
-      <li>Otros canales: WhatsApp y comunidades cercanas</li>
-    </ul>
   </div>
 
   <div class="pillar" style="--c:#4A8F9E">
-    <div class="pillar-head">
-      <span class="pillar-title">Legal</span>
-      <span class="pillar-owner">Nacho</span>
+    <div class="pillar-head"><span class="pillar-title">Legal</span><span class="pillar-owner">Nacho</span></div>
+    <div class="pillar-list">
+      <div class="pi">Términos y condiciones (lado cliente y lado proveedor)</div>
+      <div class="pi">Contrato de prestación de servicios</div>
+      <div class="pi">Política de privacidad y protección de datos</div>
+      <div class="pi">Código de conducta para proveedores</div>
+      <div class="pi">Manual de disputas y resolución de conflictos</div>
     </div>
-    <ul class="pillar-list">
-      <li>Términos y condiciones (lado cliente y lado proveedor)</li>
-      <li>Contrato de prestación de servicios</li>
-      <li>Política de privacidad y protección de datos</li>
-      <li>Código de conducta para proveedores</li>
-      <li>Manual de disputas y resolución de conflictos</li>
-    </ul>
   </div>
 
   <div class="pillar" style="--c:#1B5F6F">
-    <div class="pillar-head">
-      <span class="pillar-title">Finanzas</span>
-      <span class="pillar-owner">Entre todos</span>
+    <div class="pillar-head"><span class="pillar-title">Finanzas</span><span class="pillar-owner">Entre todos</span></div>
+    <div class="pillar-list">
+      <div class="pi">Modelo de comisiones y estructura de pagos</div>
+      <div class="pi">Retención de boletas de honorarios e IVA</div>
+      <div class="pi">Presupuesto mensual y control de gastos</div>
+      <div class="pi">Unit economics: CAC, LTV y márgenes</div>
+      <div class="pi">Seguros para los servicios prestados</div>
     </div>
-    <ul class="pillar-list">
-      <li>Modelo de comisiones y estructura de pagos</li>
-      <li>Retención de boletas de honorarios e IVA</li>
-      <li>Presupuesto mensual y control de gastos</li>
-      <li>Unit economics: CAC, LTV y márgenes</li>
-      <li>Seguros para los servicios prestados</li>
-    </ul>
   </div>
 
   <div class="pillar" style="--c:#F19A6D">
-    <div class="pillar-head">
-      <span class="pillar-title">Operaciones</span>
-      <span class="pillar-owner">Entre todos</span>
+    <div class="pillar-head"><span class="pillar-title">Operaciones</span><span class="pillar-owner">Entre todos</span></div>
+    <div class="pillar-list">
+      <div class="pi">Reclutamiento y verificación de proveedores</div>
+      <div class="pi">Atención al cliente y resolución de conflictos</div>
+      <div class="pi">Help center: preguntas frecuentes y guía de la app</div>
+      <div class="pi">Estándares de calidad, seguridad y conducta</div>
+      <div class="pi">Balance de oferta y demanda por categoría</div>
     </div>
-    <ul class="pillar-list">
-      <li>Reclutamiento y verificación de proveedores</li>
-      <li>Atención al cliente y resolución de conflictos</li>
-      <li>Help center: preguntas frecuentes y guía de la app</li>
-      <li>Estándares de calidad, seguridad y conducta</li>
-      <li>Balance de oferta y demanda por categoría</li>
-    </ul>
   </div>
 
   <div class="pillar" style="--c:#4A8F9E">
-    <div class="pillar-head">
-      <span class="pillar-title">Ventas</span>
-      <span class="pillar-owner">Entre todos</span>
+    <div class="pillar-head"><span class="pillar-title">Ventas</span><span class="pillar-owner">Entre todos</span></div>
+    <div class="pillar-list">
+      <div class="pi">Captación de proveedores vía WhatsApp, correo y llamadas</div>
+      <div class="pi">Onboarding y acompañamiento a nuevos proveedores</div>
+      <div class="pi">Seguimiento y retención de proveedores activos</div>
+      <div class="pi">Detección de gaps de oferta por categoría</div>
+      <div class="pi">Coordinación con Germán para ampliar la red</div>
     </div>
-    <ul class="pillar-list">
-      <li>Captación de proveedores vía WhatsApp, correo y llamadas</li>
-      <li>Onboarding y acompañamiento a nuevos proveedores</li>
-      <li>Seguimiento y retención de proveedores activos</li>
-      <li>Detección de gaps de oferta por categoría</li>
-      <li>Coordinación con Germán para ampliar la red</li>
-    </ul>
   </div>
 
 </div>
